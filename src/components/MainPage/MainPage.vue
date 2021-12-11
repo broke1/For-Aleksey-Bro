@@ -18,9 +18,7 @@ export default {
     }
   },
   methods: {
-    letsRock: function() {
-      
-    }
+    
   },
   created() {
 
