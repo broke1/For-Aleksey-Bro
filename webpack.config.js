@@ -1,6 +1,7 @@
 const path = require('path')
 const { VueLoaderPlugin } = require('vue-loader')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -102,6 +103,11 @@ module.exports = {
       hash: false,
       template: './src/index.html', 
       filename: './index.html'
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "src/images", to: "images" },
+      ],
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',

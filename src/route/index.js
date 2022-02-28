@@ -10,7 +10,7 @@ export default new VueRouter({
   routes: [
     {
       path: '/',  // если главная страница
-      component: require('../components/mainPage/mainPage.vue').default, 
+      component: require('../components/previewPage/previewPage.vue').default, 
     },
   ],
 });

@@ -10,7 +10,7 @@ import router from './route/index.js'  // подключаем файл с на�
 
 import regeneratorRuntime from "regenerator-runtime";
 
-Vue.component('main-page', require('./components/mainPage/mainPage.vue').default) // Основная страница
+Vue.component('preview-page', require('./components/previewPage/previewPage.vue').default) // Основная страница
 
 import "./sass/main.sass"
 
