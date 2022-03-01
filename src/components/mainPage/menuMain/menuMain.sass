@@ -1,0 +1,79 @@
+@import "../../../sass/color"
+
+.menu-container
+  width: 100%
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  align-items: center
+  margin-top: 30px
+
+  .menu-item
+    color: $white
+    font-size: 1.8rem
+    padding: 5px 25px
+    position: relative
+    cursor: pointer
+
+    &:before
+      content: ''
+      position: absolute
+      height: 80%
+      width: 3px
+      border-radius: 10px
+      background: $white
+      top: 50%
+      transform: translateY(-50%)
+      left: 0 
+
+    &:last-child
+
+      &:after
+        content: ''
+        position: absolute
+        height: 80%
+        width: 3px
+        border-radius: 10px
+        background: $white
+        top: 50%
+        transform: translateY(-50%)
+        right: 0 
+
+    .bottom_border
+      position: absolute
+      height: 3px
+      width: 80%
+      border-radius: 10px
+      background: $white
+      left: 50%
+      transform: translateX(-50%)
+      bottom: -4px 
+      opacity: 0
+      transition: all 0.4s ease
+
+    &:hover
+
+      .bottom_border
+        opacity: 1
+      
+
+
+
+    
+
+    
+
+
+
+
+  
+
+
+ 
+
+
+        
+
+
+    
+

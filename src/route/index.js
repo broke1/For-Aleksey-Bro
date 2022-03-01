@@ -9,8 +9,12 @@ export default new VueRouter({
   mode: 'history',  // этот мод используется для смены компонентов без перезагрузки страницы
   routes: [
     {
-      path: '/',  // если главная страница
+      path: '/',  // если страница превью
       component: require('../components/previewPage/previewPage.vue').default, 
+    },
+    {
+      path: '/mainPage',  // если главная страница
+      component: require('../components/mainPage/mainPage.vue').default, 
     },
   ],
 });
