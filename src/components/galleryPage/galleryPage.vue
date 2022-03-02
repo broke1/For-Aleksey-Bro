@@ -10,7 +10,7 @@
 
 <script>
 
-import './mainPage.sass'
+import './galleryPage.sass'
 
 
 export default {

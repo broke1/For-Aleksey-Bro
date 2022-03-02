@@ -13,8 +13,12 @@ export default new VueRouter({
       component: require('../components/previewPage/previewPage.vue').default, 
     },
     {
-      path: '/mainPage',  // если главная страница
-      component: require('../components/mainPage/mainPage.vue').default, 
+      path: '/aboutme',  // если страница обо мне
+      component: require('../components/aboutMePage/aboutMePage.vue').default, 
+    },
+    {
+      path: '/gallery',  // если страница галлереи
+      component: require('../components/galleryPage/galleryPage.vue').default, 
     },
   ],
 });

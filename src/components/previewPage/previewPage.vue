@@ -51,7 +51,7 @@ export default {
   methods: {
     selectLang: function(lang) {
       this.$store.commit("setLang", lang)
-      this.$router.push({ path: 'mainPage' }) 
+      this.$router.push({ path: 'aboutme' }) 
     }
   },
   created() {

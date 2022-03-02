@@ -1,4 +1,4 @@
-@import "../../../sass/color"
+@import "../../sass/color"
 
 .menu-container
   width: 100%
@@ -27,6 +27,7 @@
       left: 0 
 
     &:last-child
+      color: $veryPeri
 
       &:after
         content: ''
@@ -38,6 +39,10 @@
         top: 50%
         transform: translateY(-50%)
         right: 0 
+
+      .bottom_border
+        background: $veryPeri
+      
 
     .bottom_border
       position: absolute
@@ -55,6 +60,12 @@
 
       .bottom_border
         opacity: 1
+
+  .currentLink
+
+    .bottom_border
+      opacity: 1
+
       
 
 

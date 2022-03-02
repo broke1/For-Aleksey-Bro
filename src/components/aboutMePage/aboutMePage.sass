@@ -1,0 +1,87 @@
+@import "../../sass/color"
+
+
+
+.main-container 
+  display: flex
+  flex-flow: column
+  justify-content: flex-start
+  align-items: center
+  min-height: 100vh
+  background-image: url('/images/background-main.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+
+  .container
+    width: 1140px
+    display: flex
+    flex-flow: column 
+    justify-content: flex-start
+    align-items: flex-start
+    flex: 1
+    position: relative
+
+    .about_block
+      width: 100%
+      flex: 1
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: center
+
+      .about_img_block
+        width: 380px
+        min-width: 380px
+        margin: 0 20px
+        height: 500px
+        flex: 0
+        position: relative
+
+        .about_img
+          background-repeat: no-repeat
+          background-size: cover
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          border-radius: 10px
+          opacity: 0
+          transition: all 1s ease
+
+        .showImg
+          opacity: 1
+
+      .about_text
+        flex: 1
+        height: 100%
+        color: $white
+        padding: 0 30px
+
+        .title
+          text-align: center
+          margin-bottom: 40px
+          font-size: 2.4rem
+
+        .text
+          font-size: 2rem
+          line-height: 2.8rem
+
+
+
+
+
+
+
+
+  
+
+
+ 
+
+
+        
+
+
+    
+
