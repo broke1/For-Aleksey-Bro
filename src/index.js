@@ -16,9 +16,7 @@ Vue.component('menu-main', require('./components/menuMain/menuMain.vue').default
 
 import "./sass/main.sass"
 
-
-
-
+import "./js/fontawessome"
 
 
 // создаем экземпляр vue где подключаем самое главное переадрасицию, визуализацию элемнетов и хранилище

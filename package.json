@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
+    "@morioh/v-lightbox": "^1.0.3",
     "@vue/test-utils": "^1.0.0-beta.33",
     "autoprefixer": "^9.6.4",
     "babel-core": "^7.0.0-bridge.0",

@@ -20,6 +20,18 @@ export default new VueRouter({
       path: '/gallery',  // если страница галлереи
       component: require('../components/galleryPage/galleryPage.vue').default, 
     },
+    {
+      path: '/price',  // если страница выбора цен
+      component: require('../components/pricePage/pricePage.vue').default, 
+    },
+    {
+      path: '/event',  // если страница мероприятий
+      component: require('../components/eventPage/eventPage.vue').default, 
+    },
+    {
+      path: '/contact',  // если страница контактов
+      component: require('../components/contactPage/contactPage.vue').default, 
+    },
   ],
 });
 

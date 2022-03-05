@@ -1,0 +1,127 @@
+@import "../../sass/color"
+
+
+
+.main-container 
+  display: flex
+  flex-flow: column
+  justify-content: flex-start
+  align-items: center
+  min-height: 100vh
+  background-image: url('/images/background-main.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+
+  .container
+    width: 1140px
+    display: flex
+    flex-flow: column 
+    justify-content: flex-start
+    align-items: flex-start
+    flex: 1
+    position: relative
+
+    .price_block
+      display: flex
+      flex-flow: row nowrap
+      justify-content: center
+      align-items: center
+      margin: 50px 0
+      flex: 1
+      width: 100%
+
+      .price_card
+        width: 300px
+        display: flex
+        flex-flow: column
+        justify-content: center
+        background: $white
+        border-radius: 4px
+        padding: 30px 20px
+        margin: 0px 20px 
+        color: $black
+        height: 70vh
+
+        .price_card_title
+          text-transform: uppercase
+          font-size: 2.2rem
+          text-align: center
+          font-weight: bold
+          padding-bottom: 40px
+          border-bottom: 1.5px solid $veryPeri
+
+        .price_card_text
+          font-size: 1.7rem
+          text-align: center
+          padding: 40px 0
+          border-bottom: 1.5px solid $veryPeri
+          white-space: nowrap
+
+        .price_card_price
+          display: flex
+          flex-flow: column
+          justify-content: center
+
+          .old_price
+            font-size: 1.4rem
+            text-align: center
+            padding: 15px 0
+            position: relative
+            display: flex
+            flex-flow: row nowrap
+            justify-content: center
+            align-items: center
+            height: 30px
+
+            .price_text
+              margin-right: 15px
+
+            .fa-ruble
+              font-size: 1.2rem
+
+            .old_price_line
+              width: 60%
+              height: 1px
+              position: absolute
+              background: $veryPeri
+              top: 50%
+              left: 50%
+              transform: translateX(-50%)
+
+          .price
+            font-size: 2rem
+            text-align: center
+            display: flex
+            flex-flow: row nowrap
+            justify-content: center
+            align-items: center
+            font-weight: bold
+
+            .price_text
+              margin-right: 15px
+
+            .fa-ruble
+              font-size: 1.5rem
+
+
+
+
+
+
+
+    
+
+
+
+
+  
+
+
+ 
+
+
+        
+
+
+    
+
