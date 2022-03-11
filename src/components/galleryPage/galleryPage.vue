@@ -6,6 +6,7 @@
       />
       <lightbox 
         :items="images"
+        :class="{ligntbox_conteiner_show: show}"
       />
     </div>
   </section>
@@ -39,7 +40,8 @@ export default {
         '/images/gallery/5.jpg',
         '/images/gallery/6.jpg',
         '/images/gallery/7.jpg',
-      ]
+      ],
+      show: false
     }
   },
   computed: {
@@ -51,7 +53,7 @@ export default {
     
   },
   mounted() {
-
+    setTimeout( () => this.show = true,700)
   }
 }
 </script>

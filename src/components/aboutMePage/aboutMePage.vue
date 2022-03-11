@@ -4,7 +4,10 @@
       <menu-main 
         :lang="lang"
       />
-      <div class="about_block">
+      <div 
+        class="about_block"
+        :class="{about_block_show: show}"
+      >
         <div class="about_img_block">
           <div 
             v-for="img in 4"
@@ -43,7 +46,8 @@ import './aboutMePage.sass'
 export default {
   data () {
     return {
-      curImg: 1
+      curImg: 1,
+      show: false
     }
   },
   computed: {
@@ -62,6 +66,7 @@ export default {
         this.curImg = 1
       }
     },3000)
+    setTimeout( () => this.show = true,700)
   }
 }
 </script>

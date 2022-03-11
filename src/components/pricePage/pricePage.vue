@@ -4,7 +4,10 @@
       <menu-main 
         :lang="lang"
       />
-      <div class="price_block">
+      <div 
+        class="price_block"
+        :class="{price_block_show: show}"
+      >
         <div 
           v-for="item in prices"
           :key="item.title"
@@ -61,7 +64,8 @@ import './pricePage.sass'
 export default {
   data () {
     return {
-      prices: []
+      prices: [],
+      show: false
     }
   },
   computed: {
@@ -75,7 +79,7 @@ export default {
     
   },
   mounted() {
-
+    setTimeout( () => this.show = true,700)
   }
 }
 </script>
