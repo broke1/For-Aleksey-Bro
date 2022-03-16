@@ -1,24 +1,14 @@
 export default {
 
-  // async sendOms(data) {
-  //   let response = await fetch(`/api/sendOms`, { 
-  //     method: 'POST',
-  //     body: data,
-  //     // mode: 'no-cors'  
-  //   })
-  //     .catch (error => {
-  //       return 'error'
-  //     }) 
-  //   if (response.status == 200) { 
-  //     await response.json().then( res => {  
+  async getImagesGallery() {
+    const token = "IGQVJWRmwyRV81Y1BYUGpmTHMwYzNrSlE4VDdCS19XeTV1ZA0g0cW5mbnhoQy1kU003d3plcHNxMlFJWV90cTBmVmlQOGpCS2drWGs0OUxwTFotV2YyRHpzTGRIazJCTVVQdTJYeDFISm9CUXpDXzF3bgZDZD"
+    let response = await fetch(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,thumbnail_url,permalink,children%7Bfields=id,media_url,thumbnail_url,permalink%7D&limit=250&access_token=${token}`)
+      .catch (error => {
+        return 'error'
+      }) 
 
-  //     }).catch( error => {
-        
-  //     }) 
-  //   }  else {
-  //     return response
-  //   }
-  // },
+    return response
+  },
 
  
 

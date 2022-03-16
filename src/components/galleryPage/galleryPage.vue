@@ -33,14 +33,9 @@ export default {
   data () {
     return {
       images: [
-        '/images/gallery/1.jpg',
-        '/images/gallery/2.jpg',
-        '/images/gallery/3.jpg',
-        '/images/gallery/4.jpg',
-        '/images/gallery/5.jpg',
-        '/images/gallery/6.jpg',
-        '/images/gallery/7.jpg',
+        
       ],
+      countImg: 20, // сколько картинок выводить
       show: false
     }
   },
@@ -54,6 +49,20 @@ export default {
   },
   mounted() {
     setTimeout( () => this.show = true,700)
+    this.$store.getters.getImagesGallery().then( answer => {
+      answer.json().then( res => {
+        this.images = []
+        const imagesCur = res.data.filter( img => img.media_type == "CAROUSEL_ALBUM" || img.media_type == "IMAGE")
+        imagesCur.forEach( img => {
+          if(img.media_type == "CAROUSEL_ALBUM") {
+            img.children.data.forEach( anotherImg => {
+              if (this.images.length < 20) this.images.push(anotherImg.media_url)
+            })
+          }
+          if (this.images.length < 20) this.images.push(img.media_url)
+        })
+      })
+    })
   }
 }
 </script>

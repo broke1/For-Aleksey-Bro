@@ -12,6 +12,7 @@
           v-for="item in contacts"
           :key="item.icon"
           :href="item.link" 
+          target="_blank"
           class="contact_link"
         >
           <div class="contact">
@@ -39,19 +40,18 @@ export default {
     return {
       contacts: [
         {
-          link: "",
-          icon: "paper-plane",
-          text: "8 (916) 734-46-57"
+          icon: "phone",
+          text: "+1 (424) 382-3685"
         },
         {
-          link: "",
+          link: "https://wa.me/14243823685",
           icon: "whatsapp",
-          text: "8 (916) 734-46-57"
+          text: "+1 (424) 382-3685"
         },
         {
-          link: "",
+          link: "https://www.instagram.com/sash.hair/",
           icon: "instagram",
-          text: "@brother-Alex"
+          text: "@sash.hair"
         },
       ],
       show: false,

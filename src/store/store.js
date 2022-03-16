@@ -81,7 +81,30 @@ export default {  // приблизительный объект хранили�
       return (lang) => {
         return state.prices[lang]
       }
-    }
+    },
+    getImagesGallery: (state) => {
+      return () => {
+        return new Promise((resolve) => {
+          const response = services.getImagesGallery()
+          response.then( res => {
+            if (res.status == 200){ 
+              resolve(res)
+            } else {
+              resolve('failed')
+            }
+          })
+
+        })
+
+        // const response = services.getImagesGallery()
+        // response.then( answer => {
+        //   answer.json().then( res => {
+        //     return res
+        //   })
+        // })
+
+      }
+    },
   }
 }
 
